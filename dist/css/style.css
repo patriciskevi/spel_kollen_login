@@ -31,7 +31,12 @@ body {
     -o-border-radius: 5px;
 }
 
-
+.login-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: Raleway;
+}
 
 
 .input-field input[type=text]:focus+label,
@@ -48,14 +53,17 @@ body {
     box-shadow: 0 1px 0 0 rgb(122, 122, 122) !important;
 }
 
+.input-field .prefix.active {
+    color: #000;
+}
+
+
 #login-buttons .btn {
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.input-field .prefix.active {
-    color: #000;
-}
+
 
 #sign-up-icon {
     color: rgb(88, 88, 88);
