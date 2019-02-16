@@ -1,70 +1,87 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .background-img {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    background:
-        /* top, transparent red, faked with gradient */
-        linear-gradient(rgba(242, 193, 78, 0.8),
-        rgb(248, 115, 62, 0.8)),
-        /* bottom, image */
-        url(../img/dif_background.jpg) no-repeat;
-    background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background:
+        /* top, transparent red, faked with gradient */ linear-gradient(
+      rgba(242, 193, 78, 0.8),
+      rgb(248, 115, 62, 0.8)
+    ),
+    /* bottom, image */ url(../img/dif_background.jpg) no-repeat;
+  background-size: cover;
+}
+
+.card {
+  position: relative;
+  background-color: rgba(250, 250, 250, 0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  top: 40%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .login {
-    padding: 20px 10px;
-    position: relative;
-    background-color: rgba(250, 250, 250, 0.7);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 5px;
-    width: 400px;
-    margin: 0 auto;
-    top: 40%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+  padding: 20px 10px;
+}
+
+.login-buttons {
+  display: flex;
+  width: 100%;
+}
+
+#login-btn,
+#sign-up-btn {
+  width: 50%;
+  font-size: 18px;
+  font-family: Raleway;
+  padding: 20px 0;
+  color: #000;
+}
+
+.active-btn {
+  border-bottom: 1px solid rgb(145, 145, 145);
+  padding-bottom: 1px;
 }
 
 .login-title {
-    margin-bottom: 20px;
-    font-size: 32px;
-    font-weight: 400;
-    font-family: Raleway;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: Raleway;
 }
 
-
-.input-field input[type=text]:focus+label,
-.input-field input[type=password]:focus+label,
-.input-field input[type=email]:focus+label {
-    color: rgb(122, 122, 122) !important;
+.input-field input[type="text"]:focus + label,
+.input-field input[type="password"]:focus + label,
+.input-field input[type="email"]:focus + label {
+  color: rgb(122, 122, 122) !important;
 }
 
+.input-field input[type="text"]:focus,
+.input-field input[type="password"]:focus,
+.input-field input[type="email"]:focus {
+  border-bottom: 1px solid rgb(122, 122, 122) !important;
+  box-shadow: 0 1px 0 0 rgb(122, 122, 122) !important;
+}
 
-.input-field input[type=text]:focus,
-.input-field input[type=password]:focus,
-.input-field input[type=email]:focus {
-    border-bottom: 1px solid rgb(122, 122, 122) !important;
-    box-shadow: 0 1px 0 0 rgb(122, 122, 122) !important;
+i {
+  color: rgb(80, 80, 80);
 }
 
 .input-field .prefix.active {
-    color: #000;
+  color: rgb(122, 122, 122);
 }
-
 
 #login-buttons .btn {
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-
-
-#sign-up-icon {
-    color: rgb(88, 88, 88);
+  margin-right: 20px;
+  margin-left: 20px;
 }
