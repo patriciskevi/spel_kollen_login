@@ -85,3 +85,37 @@ i {
   margin-right: 20px;
   margin-left: 20px;
 }
+
+/* .tabs,
+.tab {
+  background-color: transparent;
+  color: rgb(80, 80, 80);
+} */
+
+.tabs {
+  background-color: transparent;
+}
+
+/* .tabs .tab a.active {
+  color: rgb(80, 80, 80);
+} */
+
+/* .tabs .tab a {
+  color: rgb(80, 80, 80);
+} */
+
+.tabs .indicator {
+  background-color: rgba(80, 80, 80, 0.4);
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: transparent;
+}
+
+.tabs .tab a.active,
+.tabs .tab a,
+a,
+a:hover {
+  color: rgb(80, 80, 80) !important;
+}
